@@ -1,4 +1,5 @@
-display: flex;
+.cabecalho{
+    display: flex;
     justify-content: space-between;
     background-color: var(--branco);
     position: relative;
@@ -20,6 +21,7 @@ display: flex;
 .conteiner{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -59,3 +61,28 @@ width: 60vw;
 .conteiner__botao{
     display: none;
 }
+.conteiner__titulo{
+    display: none;
+}
+ @media  screen and (min-width: 1024) {
+    .conteiner__titulo{
+        display: block;
+        font-family: var(--fonte-secundaria);
+        font-weight: 400;
+        font-size: 30px;
+    }
+   
+    .conteiner__titulo--negrito{
+        font-weight: 700;
+    }
+    .cabecalho__menu{
+        display: none;
+    }
+
+
+    .conteiner__favorito{
+        display: none;
+    }
+   
+ }
+
